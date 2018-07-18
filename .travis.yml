@@ -10,3 +10,18 @@ php:
 script:
   # Run your tests here.
   - echo 'Tested'
+
+  before_deploy:
+  - mkdir build
+  - cp README.txt build
+  - cp Print.php build
+ 
+deploy:
+  - provider: wordpress-plugin
+    on:
+      php: 5.5.9
+      tags: true
+      repo: Print
+    username: ch12jan1998@gmail.com
+    password: Junkfoodnight100@
+    build_dir: build 
