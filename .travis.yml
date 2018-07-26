@@ -23,5 +23,5 @@ deploy:
       tags: true
       repo: Print
     username: ch12jan1998@gmail.com
-    password: Junkfoodnight100@
+    password: MyPassword
     build_dir: build 
